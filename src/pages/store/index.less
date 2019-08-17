@@ -1,0 +1,42 @@
+.store-index {
+    .swiper-item {
+        border-radius: 10px;
+        overflow: hidden;
+
+        .bg-cov {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+
+    .video {
+        .bg-cov {
+            &:before {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, .5);
+                content: '';
+            }
+
+            &:after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                content: '';
+                border-color: transparent transparent #fff;
+                border-width: 50px 36px;
+                border-style: solid;
+                transform: rotate(90deg);
+                margin: -50px 0 0 -18px;
+            }
+        }
+    }
+
+    .card-warp {
+        border-radius: 14px;
+        overflow: hidden;
+    }
+}

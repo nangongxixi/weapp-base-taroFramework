@@ -1,0 +1,54 @@
+stages:
+    - setup
+    - deploy
+
+prepare:
+    stage: setup
+    cache:
+        key: npm
+        paths:
+            - node_modules
+    when: manual
+    script:
+        - rm node_modules -rf
+        - source /root/nvm/nvm.sh
+        - npm --registry=https://registry.npm.taobao.org install
+    tags:
+        - deploy
+
+job_deploy_test:
+    stage: deploy
+    cache:
+        key: npm
+        paths:
+            - node_modules
+        policy: pull
+    when: manual
+    only:
+        - dev
+    script:
+        - pwd
+        - npm --registry=https://registry.npm.taobao.org run build:h5
+        - php bin/add-count.php
+        - sh bin/deploy.sh deploy_test
+    tags:
+        - deploy
+
+job_deploy_prod:
+    stage: deploy
+    cache:
+        key: npm
+        paths:
+            - node_modules
+        policy: pull
+
+    when: manual
+    only:
+        - master
+    script:
+        - pwd
+        - npm --registry=https://registry.npm.taobao.org run build:h5
+        - php bin/add-count.php
+        - sh bin/deploy.sh deploy
+    tags:
+        - deploy

@@ -1,0 +1,13 @@
+{
+  "extends": ["taro", "plugin:react/recommended"],
+  "rules": {
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+  },
+  "globals": {
+    "EnvName": true,
+    "wx": true
+  },
+  "parser": "babel-eslint"
+}

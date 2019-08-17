@@ -1,0 +1,57 @@
+.store-foot {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    height: 100px;
+    background: #fff;
+    border-top: 1px solid #F5F5F5;
+
+    .foot-item {
+        position: relative;
+        width: 38px;
+        height: 38px;
+        margin: 12px auto 8px;
+
+        .foot-img {
+            width: 38px;
+            height: 38px;
+        }
+        .x-icon {
+          position: absolute;
+          right: -44px;
+          top: -62px;
+          width: 48px;
+          height: 35px;
+          z-index: 2;
+        }
+    }
+
+    .foot-join {
+        &:after {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            content: '';
+            background: #F5F5F5;
+            width: 108px;
+            height: 54px;
+            border-radius: 0 0 100px 100px;
+            margin-left: -54px;
+        }
+
+        .foot-img {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            z-index: 1;
+            background: #fff;
+            border-radius: 100px;
+            box-shadow: 0 0 20px rgba(246, 65, 60, .25);
+            padding: 20px 22px;
+            box-sizing: content-box;
+            margin-left: -40px;
+        }
+    }
+}

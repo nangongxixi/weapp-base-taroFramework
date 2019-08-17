@@ -1,0 +1,42 @@
+.filters {
+    padding: 20px;
+    background: #fff;
+    justify-content: space-between;
+
+    .filter-clear {
+        display: inline-block;
+        padding: 6px 10px;
+        background: #f5f5f5;
+        flex: 0 0 160px;
+        border-radius: 10px;
+    }
+
+    .text-overflow {
+        position: relative;
+        color: #EF2A32;
+        background: #fff;
+        border: 1PX solid #EF2A32;
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 50%;
+            height: 50%;
+            background: #EF2A32;
+            transform: rotate(-55deg);
+            right: -30px;
+            bottom: -12px;
+            z-index: 1;
+        }
+
+        &:after {
+            position: absolute;
+            content: 'x';
+            color: #fff;
+            font-size: 24px;
+            right: 0;
+            bottom: -4px;
+            z-index: 2;
+        }
+    }
+}

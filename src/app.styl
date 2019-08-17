@@ -1,0 +1,337 @@
+body, page {
+  background: #F5F5F5;
+  font-size 20px;
+  box-sizing border-box;
+}
+
+scroll-view, text, view, input, textarea, button, div, span {
+  box-sizing: border-box;
+}
+
+button, button:after, button:before {
+  outline: none;
+  border: 0;
+}
+
+.fwb {
+  font-weight: 800;
+}
+
+.vtm {
+  vertical-align: middle;
+}
+
+/**
+ * text styles
+ */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line2-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.wrap {
+  word-break: break-all;
+}
+
+/**
+ * font-color
+ */
+.c-33 {
+  color: #333;
+}
+
+.c-66 {
+  color: #666;
+}
+
+.c-99 {
+  color: #999;
+}
+
+/**
+ * padding or margin
+ */
+.pd-15 {
+  padding: 30px;
+}
+
+.pdtb-15 {
+  padding: 30px 0;
+}
+
+.box1, .box-m, .pdlr-15 {
+  padding: 0 30px;
+}
+
+.pdb-50 {
+  padding-bottom: 100px;
+}
+
+.pdt-0 {
+  padding-top: 0;
+}
+
+.pdb-0 {
+  padding-bottom: 0;
+}
+
+.mg-15 {
+  margin: 30px;
+}
+
+.mgtb-15 {
+  margin: 30px 0;
+}
+
+.mgt-15 {
+  margin-top: 30px;
+}
+
+.bg-con {
+  background: no-repeat center;
+  background-size: contain;
+}
+
+.bg-cov {
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.red-btn {
+  background: linear-gradient(to right, #FE5C47, #EF2C34);
+  height: 66px;
+  line-height: 66px;
+  font-size: 30px;
+  border-radius: 100px;
+  color: #fff;
+  box-shadow: 0 0 20px #FE5C47;
+  text-align: center;
+  border: 0;
+}
+
+
+.no-shadow {
+  box-shadow: 0 0 0 transparent;
+}
+
+.com-box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+
+/** font-size **/
+
+.zdl {
+  font-size: 38px;
+}
+
+.dl {
+  font-size: 36px;
+}
+
+.xxl {
+  font-size: 34px;
+}
+
+.xl {
+  font-size: 32px;
+}
+
+.lg {
+  font-size: 30px;
+}
+
+.nm {
+  font-size: 28px;
+}
+
+.sm {
+  font-size: 26px;
+}
+
+.xs {
+  font-size: 24px;
+}
+
+.xxs {
+  font-size: 22px;
+}
+
+/**
+ * box styles
+ */
+.com-box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.m-bg {
+  background #fff;
+}
+
+.flex-c, at-tabs, .at-tabs, j-scroll-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dis-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-hide {
+  flex: 1;
+  overflow: hidden;
+}
+
+.flex-auto {
+  flex: 1;
+  overflow: auto;
+}
+
+/**
+ * tabs styles
+ */
+
+.at-tabs__body {
+  display: flex;
+  flex: 1;
+}
+
+at-tabs-pane, .at-tabs-pane {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.at-tabs__item--active {
+  color: #000;
+  font-weight: 600;
+}
+
+.at-tabs__item-underline {
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(247, 68, 61, .9);
+  width: 160px;
+  left: 50%;
+  bottom: 16px;
+  margin-left: -80px;
+  box-shadow: 0 0 20px #F7443D;
+}
+
+.w100 {
+  width: 100%
+}
+
+.h100 {
+  height: 100%;
+}
+
+.mt3 {
+  margin-top: 30px
+}
+
+/*
+baidu style
+ */
+.base-view__flex-auto {
+  height: 100%;
+}
+
+/*
+form
+ */
+.form .input {
+  position: relative;
+  height: 70px;
+  line-height: 70px;
+  font-size: 28px;
+  margin-bottom: 26px;
+  padding: 0 20px;
+  border: 1PX solid rgba(163, 163, 163, .5);
+  text-align: left;
+  background: #fff;
+}
+
+.form .textarea {
+  width: 100%;
+  line-height: 44px;
+  height: 220px;
+  padding: 20px;
+  resize: none;
+  border: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 28px;
+}
+
+/**
+ * taro ui
+ */
+.at-drawer__content {
+  z-index 1001 !important;
+}
+
+.must-fill {
+  position: relative;
+}
+
+.must-fill:before {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  content: '*'
+  color: red;
+  transform: translateY(-50%);
+}

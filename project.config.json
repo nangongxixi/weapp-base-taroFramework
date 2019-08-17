@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist/weapp",
+  "projectname": "taroDemo",
+  "description": "demo",
+  "appid": "wx704fb0deb010229e",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
